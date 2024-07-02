@@ -3,7 +3,7 @@
   base = "./"
 
   # Build command
-  command = "npm install --force && npm run build"
+  command = "npm install --legacy-peer-deps && npm run build"
 
   # Publish directory (where your built output will be deployed from)
   publish = "dist"  # Replace "dist" with your actual build output directory
