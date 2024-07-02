@@ -1,12 +1,5 @@
 [build]
-  # Directory to change to before starting build
-  base = "./"
-
-  # Build command
-  command = "npm install --legacy-peer-deps && npm run build"
-
-  # Publish directory (where your built output will be deployed from)
-  publish = "dist"  # Replace "dist" with your actual build output directory
-
-  # Node.js version to use
-  node_version = "15.14.0"  # Replace with your desired Node.js version
+  base = "./"  # Change to the correct base directory if needed
+  command = "npm cache clean --force && npm install --legacy-peer-deps && npm run build"
+  publish = "dist"  # Adjust this to match your actual build output directory
+  node_version = "15.14.0"  # Ensure this matches your project's Node.js version
